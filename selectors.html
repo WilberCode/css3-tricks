@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       /* input:required:focus{ 
+            border: 1px solid rgb(100, 100, 100);
+            outline: none;
+        }*/
+        body{ 
+            font-family: sans-serif, lato;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+        }
+        form{
+            margin-left: 0.5em;
+            width: 28em;
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1.5em;
+            background-color: #f7f5f5;
+        }
+        label{
+            display: block;
+            margin-bottom: 0.6em; 
+        }
+        input{ 
+            width: 100%;
+            padding: 1em 0;
+            border-radius: 4px;
+            outline: none; 
+            margin-bottom: 0.8em;
+            display: block;
+            
+        }
+        input:not([type ='submit']){
+            border: none;
+            box-shadow: 0 0 0 3px #cccccc;
+            background-color: #ffffff;
+            display: block; 
+        }
+        input:required{ 
+            opacity: 1;
+        }
+        input[type='text']:optional{ 
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body> 
+    <form action="">
+        <label>Email: </label><input type="email" required>
+        <label>Name:</label> <input type="text"  >
+        <label>Last Name: </label><input type="text"  >
+        <label>Country: </label><input type="text"  >
+        <label>Passoword:</label> <input type="password"  > 
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

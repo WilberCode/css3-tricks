@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            font-family: lato; 
+        }
+        .overlay{ 
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -3;
+            background-color:rgba(0, 0, 0, 0.4);
+            display: flex;
+            opacity: 0;
+            transition: .3s;
+            background: radial-gradient(circle,transparent,#161616)
+        }
+        .btn{
+            display: inline-block; 
+            padding: 1em 3em;
+            text-decoration: none;
+            background-color: rgb(169, 230, 1);
+            border-radius: 4px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .btn:active{
+            transform:scale(1.1)
+        } 
+        .btn-close{
+            background-color: #161616; 
+        }
+        .title{
+            letter-spacing: 0.2em;
+            color: rgb(150, 150, 150);
+        }
+        .overlay-show{
+            opacity: 1;
+            z-index: 1;
+        } 
+    </style>
+</head>
+<body>
+    <a class="btn btn-open"  href="#">Open Overlay</a>
+    <h2 class="title">Overlay</h2>
+    <div class="overlay">
+    <a class="btn btn-close" href="#">Close Overlay</a>
+    </div>
+
+    <script>
+        (function(d){
+           let overlay = d.querySelector('.overlay')
+            d.querySelector('.btn-open').onclick = ()=>{ 
+                overlay.classList.add('overlay-show')  
+            }
+            overlay.onclick = ()=>{  
+                overlay.classList.remove('overlay-show')  
+            }
+        })(document)
+    </script>
+</body>
+</html>
