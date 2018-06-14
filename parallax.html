@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+        *,*::before,*::after{
+            box-sizing: inherit;
+            padding: 0;
+            margin: 0;
+            font-family: Lato;
+        }
+        html,body{
+            height: 100%;
+        }
+        .parallax{
+            height: 100%;
+            background-image: url(https://images.pexels.com/photos/325702/pexels-photo-325702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+          
+        }
+        .parallax-wrap{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(19, 114, 151);
+            opacity: 0.95;
+        }
+        .content{
+            height: 300px;
+            background-color: rgb(10, 149, 184);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: cover;
+        }
+        .content1{ 
+            height: 100%;
+            background-image: url(https://images.pexels.com/photos/708513/pexels-photo-708513.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); 
+        }
+        .content2{ 
+            height: 100%;
+            background-image: url(https://images.pexels.com/photos/537466/pexels-photo-537466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); 
+        }
+        .content3{
+            height: 100%;
+            position: relative; 
+            background-image: url(https://images.pexels.com/photos/395085/pexels-photo-395085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); 
+        }
+        .content3 .description{ 
+            bottom: 0;
+        }
+        .description{
+            padding: 2em 5em;
+            background-color: #fff;
+            text-align: center; 
+        }
+        h3{
+            text-transform: uppercase;
+            font-weight: 700;   
+            margin-bottom: 1.5em;
+            font-size: 14px; 
+            letter-spacing: .4em;
+        }
+        p{
+             font-size: 14px;
+             word-spacing: .03em;
+             line-height: 1.8em;
+             color: rgb(138, 138, 138);
+             font-weight: 100;   
+        }
+        .description--paragraph{
+            background-color: rgb(32, 32, 32);
+            position: absolute;
+        }
+        .btn{
+            position: relative;
+            background-color: #eeeeee;
+            padding:  1.5em 3em; 
+            display: block;
+            text-transform: uppercase;
+            font-size: 14px; 
+            letter-spacing: .4em;
+            font-weight: 800;
+            border-radius: 4px;
+            box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .btn-primary{
+            background-color: #ffe600;
+        }
+        .btn-secondary{
+            background-color: #17719b;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax">
+        <div class="parallax-wrap"></div>
+        <span class="btn btn-primary">Parallax</span>
+    </div>
+    <div class="content1 content">
+        <div class="description">
+                <h3>Lorem ipsum dolor 1</h3>
+                <p> Lorem ipsum dolor sit amet consectetur,  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et ut recusandae earum? Labore, cumque? Fuga, at. Qui ipsa nam quaerat voluptas voluptate, ad commodi ipsum voluptatibus illum itaque voluptatem quas quidem eveniet atque aliquid quibusdam. Ratione. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, possimus. Esse repellat atque ipsum aperiam labore doloremque ipsa fugit in pariatur deserunt, consectetur aliquid optio minus. Quaerat ipsa obcaecati praesentium.</p>
+        </div>
+    </div>
+    <div class="content2 content">
+            <div class="description">
+                    <h3>Lorem ipsum dolor 2 </h3>
+                    <p> Lorem ipsum dolor sit amet consectetur,  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et ut recusandae earum? Labore, cumque? Fuga, at. Qui ipsa nam quaerat voluptas voluptate, ad commodi ipsum voluptatibus illum itaque voluptatem quas quidem eveniet atque aliquid quibusdam. Ratione. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, possimus. Esse repellat atque ipsum aperiam labore doloremque ipsa fugit in pariatur deserunt, consectetur aliquid optio minus. Quaerat ipsa obcaecati praesentium.</p>
+            </div>
+    </div>
+    <div class="content3 content">
+            <div class="description">
+                    <h3>Lorem ipsum dolor 3 </h3>
+                    <p> Lorem ipsum dolor sit amet consectetur,  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et ut recusandae earum? Labore, cumque? Fuga, at. Qui ipsa nam quaerat voluptas voluptate, ad commodi ipsum voluptatibus illum itaque voluptatem quas quidem eveniet atque aliquid quibusdam. Ratione. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, possimus. Esse repellat atque ipsum aperiam labore doloremque ipsa fugit in pariatur deserunt, consectetur aliquid optio minus. Quaerat ipsa obcaecati praesentium.</p>
+            </div>
+            <div class="description description--paragraph"> 
+                    <p> Lorem ipsum dolor sit amet consectetur,  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et ut recusandae earum? Labore, cumque? Fuga, at. Qui ipsa nam quaerat voluptas voluptate, ad commodi ipsum voluptatibus illum itaque voluptatem quas quidem eveniet atque aliquid quibusdam. Ratione. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, possimus. Esse repellat atque ipsum aperiam labore doloremque ipsa fugit in pariatur deserunt, consectetur aliquid optio minus. Quaerat ipsa obcaecati praesentium.</p>
+            </div>
+    </div>
+    <div class="parallax">
+            <span class="btn btn-secondary">SCROLL UP</span>
+    </div>
+
+</body>
+</html>

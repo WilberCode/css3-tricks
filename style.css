@@ -1,0 +1,31 @@
+.menu{ 
+    display: flex; 
+    justify-content: center;
+    list-style: none;  
+    background: #ffffff;; 
+}
+.menu-item{
+    padding-top: .8em;
+    padding-bottom: .8em;  
+}
+.menu-link{     
+    display: block; 
+    margin-left: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    color: #252525;
+    font-weight: 800;
+}
+.menu-link--teachers{  
+    margin-right:3em;
+}
+.menu-link--specialties{ 
+    margin-left:3em; 
+}
+.logo{ 
+    position: absolute;
+    top: .6em;
+    left: 50%; 
+    width: 25px;
+    margin-left: -25px;
+}

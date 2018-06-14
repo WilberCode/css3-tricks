@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+        *,*::before,*::after{
+            box-sizing: inherit;
+            padding: 0;
+            margin: 0;
+            font-family: 'Lato';
+        }
+        body{
+            background-color: #f1f1f1;
+        }
+       .menu{ 
+            display: flex; 
+            justify-content: center;
+            list-style: none;  
+            background: #ffffff;; 
+        }
+        .menu-item{
+            padding-top: 1em;
+            padding-bottom: 1em;  
+        }
+        .menu-link{     
+            display: block; 
+            margin-left: 1em;
+            margin-right: 1em;
+            text-decoration: none;
+            color: #252525;
+            font-weight: 800;
+        }
+        .menu-link--teachers{  
+            margin-right:3em;
+        }
+        .menu-link--specialties{ 
+            margin-left:3em; 
+        }
+        .logo{ 
+            position: absolute;
+            top:  .8em;
+            left: 50%; 
+            width: 25px;
+            margin-left: -25px; 
+        }
+    </style>
+</head>
+<body> 
+
+    <ul class="menu">
+        <li class="menu-item"><a class="menu-link" href="#">Curso</a></li>
+        <li class="menu-item"><a class="menu-link menu-link--teachers" href="#">Profesores</a></li>
+        <li class="menu-item"><a class="menu-link menu-link--specialties" href="#">Especialidades</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Blog</a></li>
+    </ul>
+    <img class="logo" src="https://yt3.ggpht.com/-WVNOnXZ3nMM/AAAAAAAAAAI/AAAAAAAAAAA/wtORzm8kYOc/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="EDteam">
+
+</body>
+</html>
